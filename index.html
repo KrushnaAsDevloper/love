@@ -30,6 +30,13 @@
             border-radius: 50% 50% 0 0;
             text-align: center;
             font-size: 1.3rem;
+            visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            
+
 
 
         }
@@ -51,19 +58,24 @@
         }
         .change{
             background-color: pink;
-
+        }
+        .visible{
+            visibility: visible;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="boxs" class="box"></div>
+        <div id="boxs" class="box">I love you Tanuu..😘</div>
         <div id="text">click here.!</div>
     </div>
     <script>
         let get = document.getElementById("text")
+        let text = document.getElementById("boxs")
         get.addEventListener("click", ()=>{
-            document.body.style.backgroundColor = "pink"
+            document.body.classList.toggle("change")
+            text.classList.toggle("visible")
         })
         
     </script>
