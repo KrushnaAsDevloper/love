@@ -18,10 +18,23 @@
             <input type="text" id="textBox" placeholder="Type something..." />
         </div>
         <div class="inp-2">
-            <label for="selectColor">Select Color:-> </label><input class="colorPicker" type="color" name="color"
+            <label for="selectColor">Select Color:</label><input class="colorPicker" type="color" name="color"
                 id="color" value="#ffffff">
-            <button id="displayButton">Display</button>
+            <label for="fontPicker">Choose Font:</label>
+            <select id="fontPicker">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Consolas">Consolas</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Menlo">Menlo</option>
+                <option value="Lucida Console">Lucida Console</option>
+                <option value="Inconsolata">Inconsolata</option>
+            </select>
 
+            <button id="displayButton">Display</button>
         </div>
     </div>
 
@@ -32,14 +45,15 @@
             output.style.color = selectedColor
 
         }
-
         document.addEventListener("DOMContentLoaded", function () {
             const displayButton = document.getElementById("displayButton");
             const textBox = document.getElementById("textBox");
             const output = document.getElementById("output");
             const inputSection = document.getElementById("inputSection");
+            const fontPicker = document.getElementById('fontPicker');
 
             displayButton.addEventListener("click", function () {
+                output.style.fontFamily = fontPicker.value;
                 const inputValue = textBox.value.trim();
                 document.body.classList.toggle("pink")
                 document.querySelector(".inp").style.display = "none"
