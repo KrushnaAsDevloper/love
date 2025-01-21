@@ -5,78 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Box Example</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background: url(https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg);
-        background-size: cover;
-    }
-
-    #container {
-        text-align: center;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.401);
-        width: 300px;
-        font-family: "Lobster", serif;
-        background-color: rgba(193, 156, 130, 0.393);
-    }
-
-    input[type="text"] {
-        width: 200px;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #cccccc52;
-        border-radius: 5px;
-    }
-
-    button {
-        padding: 10px 20px;
-        background-color: #8e7654;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #b09063;
-    }
-
-    #output {
-        margin-bottom: 20px;
-        font-size: 25px;
-        color: #e62b2b;
-        background-color: rgba(255, 255, 255, 0.457);
-        border: 2px solid white;
-        border-radius: 50% 50% 0 0;
-        padding: 15px;
-        min-height: 200px;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pink {
-        background-color: pink;
-    }
-
-    .hidden {
-        display: none;
-    }
-</style>
-
 <body>
     <div id="container">
         <div id="output"></div>
@@ -86,32 +19,7 @@
         </div>
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const displayButton = document.getElementById("displayButton");
-            const textBox = document.getElementById("textBox");
-            const output = document.getElementById("output");
-            const inputSection = document.getElementById("inputSection");
-
-            displayButton.addEventListener("click", function () {
-                const inputValue = textBox.value.trim();
-                document.body.classList.toggle("pink")
-                document.querySelector(".inp").style.display = "none"
-                if (inputValue === "") {
-                    output.textContent = "Please enter something in the text box.";
-                    output.style.color = "red";
-                    output.style.display = "flex"; // Show the output for the error message
-                } else {
-                    output.textContent = `${inputValue}`;
-                    output.style.color = "white";
-                    output.style.display = "flex"; // Show the output
-                    inputSection.style.display = "none"; // Hide the input and button section
-                }
-            });
-        });
-
-
-    </script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

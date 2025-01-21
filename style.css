@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg);
+    background-size: cover;
+}
+
+#container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.401);
+    width: 300px;
+    font-family: "Lobster", serif;
+    background-color: rgba(193, 156, 130, 0.393);
+    
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc52;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8e7654;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b09063;
+}
+
+#output {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color:red;
+    background-color: rgba(255, 255, 255, 0.457);
+    border: 2px solid white;
+    border-radius: 50% 50% 0 0;
+    padding: 15px;
+    min-height: 200px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.hidden {
+    display: none;
+}
