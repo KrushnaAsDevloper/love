@@ -26,11 +26,17 @@ body {
 }
 
 input[type="text"] {
-    width: 200px;
+    width: 250px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #cccccc52;
     border-radius: 5px;
+}
+
+label{
+    color: #68512a;
+    font-size: 18px;
+    
 }
 
 button {
@@ -40,6 +46,9 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Lobster", serif;
+    
+    margin: auto;
 }
 
 button:hover {
@@ -61,11 +70,16 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
-
-.pink {
-    background-color: pink;
-}
-
 .hidden {
     display: none;
+}
+.colorPicker{
+    width: 70px;
+    height: 38px;
+    margin-left: 3px;
+}
+.inp-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
