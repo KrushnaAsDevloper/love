@@ -74,9 +74,12 @@ button:hover {
     display: none;
 }
 .colorPicker{
-    width: 70px;
+    width: 50px;
     height: 38px;
     margin-left: 3px;
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
 }
 .inp-2{
     display: flex;
