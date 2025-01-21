@@ -13,9 +13,11 @@ body {
     margin: 0;
     background: url(https://static.vecteezy.com/system/resources/previews/027/231/654/non_2x/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg);
     background-size: cover;
+    
 }
 
 #container {
+    position: relative;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -99,4 +101,15 @@ button:hover {
     width: 400px;
     flex-direction: column;
     margin-bottom: 20px;
+}
+.gitHub{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.gitHub a  {
+    color:#8e7654;
+}
+.gitHub a i {
+    font-size: 50px;
 }
